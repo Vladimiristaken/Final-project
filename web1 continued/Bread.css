@@ -1,0 +1,88 @@
+.Grid_ig{
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 1px 55px 70px 210px 85px 140px 40px;
+  padding: 5px;
+  margin: 5px;
+  text-align: center;    
+}
+
+body{
+  background-color: rgb(60, 60, 60);
+}
+
+#Breadpic{
+  align-self: self-start;
+  grid-row: 2/3;
+  grid-column: 3/3;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+    li a:hover {
+      background-color: #211e1e;
+      color: white;
+    }
+  
+    .active{
+      background-color: aqua;
+      color: black;
+    }
+    
+    
+    li:last-child {
+      border-bottom: none;
+    }
+  
+  #Breadpic{
+    grid-row: 3 / 5;
+    grid-column: 1 / 2;
+    border: solid 5px brown;
+  }
+  
+  .Title{
+    -webkit-text-fill-color: white;
+    grid-row: 2;
+    grid-column: 1 / 6;
+    text-align: center;
+  }
+
+  #Text{
+    grid-column: 2 / 6;
+    grid-row: 3 / 5;
+    -webkit-text-fill-color: lightgrey;
+}
+
+#Baking{
+  grid-row: 5 / 7;
+  grid-column: 5 / 6;
+  border: solid 5px gray;
+}
+
+#Text2{
+  grid-column: 1 / 5;
+  grid-row: 5 / 7;
+  -webkit-text-fill-color: lightgrey;
+}
